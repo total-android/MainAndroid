@@ -1,2 +1,8 @@
+include ':component_hp'
+include ':component_login'
+include ':component_navigation'
+include ':component_system'
+include ':component_home'
+include ':common_base'
 include ':app'
 rootProject.name = "MainAndroid"

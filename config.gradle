@@ -1,0 +1,12 @@
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 17,
+            targetSdkVersion : 26,
+            versionCode      : 1,//报考大学&专家版版本code
+            versionName      : "1.0.0"//报考大学&专家版版本名
+    ]
+
+
+}
