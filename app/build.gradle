@@ -1,7 +1,5 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
+ext.mainApp = true
+project.apply plugin: 'cc-register'
 
 android {
     compileSdkVersion 30
@@ -27,14 +25,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
 }
 
 dependencies {
-
-    api 'com.billy.android:cc:2.1.5'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
@@ -46,5 +39,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     api project(':common_base')
+
+    addComponent 'component_hp'
+    addComponent 'component_login'
+    addComponent 'component_navigation'
+    addComponent 'component_system'
+    addComponent 'component_home'
+
 
 }

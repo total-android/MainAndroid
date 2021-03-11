@@ -6,11 +6,11 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:3.5.2"
+        classpath 'com.android.tools.build:gradle:3.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // 动态的将你声明的所有组件注册到CC集合中，以便在跳转中使用
-        classpath 'com.billy.android:autoregister:1.2.0'
+        classpath 'com.billy.android:cc-register:1.0.9'
         // 依赖自动注册插件：
         classpath 'com.billy.android:cc-register:1.0.9'
         // NOTE: Do not place your application dependencies here; they belong
