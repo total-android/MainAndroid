@@ -1,4 +1,3 @@
-include ':component_hp'
 include ':component_login'
 include ':component_navigation'
 include ':component_system'
